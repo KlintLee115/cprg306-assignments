@@ -28,7 +28,7 @@ export default function MealIdeas({ ingredient }) {
                         <header><h2 className='font-bold text-2xl'>Here are some ideas using {ingredient}</h2></header>
                         <ul>
                             {meals.map(meal => (
-                                <li>{meal.strMeal}</li>
+                                <li key={meal.strMeal}>{meal.strMeal}</li>
                             ))}
                         </ul>
                     </>
