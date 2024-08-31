@@ -29,8 +29,6 @@ export default function Page() {
                 </div>
                 <MealIdeas ingredient={selectedItemName} />
             </div>
-
-
         </main>
     )
 }
