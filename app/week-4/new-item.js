@@ -1,21 +1,21 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 export default function NewItem() {
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(1)
 
     const increment = () => quantity < 20 && setQuantity(quantity + 1)
     const decrement = () => quantity > 1 && setQuantity(quantity - 1)
 
     return (
 
-        <form className='bg-white p-10 mt-10 flex flex-col gap-4 mx-auto w-1/2 text-black' >
-            <label className='font-bold pb-2'>
+        <form className='bg-white p-10 mt-10 mx-auto w-1/2 text-black' >
+            <label className='font-bold'>
                 Quantity: {quantity}
             </label>
 
-            <div>
+            <div className='mt-5'>
                 <input
                     type="button"
                     value="-"
