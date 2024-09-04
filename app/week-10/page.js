@@ -16,7 +16,7 @@ export default function Page() {
 
                 </>
                     : <>
-                        <Link className='block mb-10' href={"/week-9/shopping-list"}>Go to shopping list</Link>
+                        <Link className='block mb-10' href={"/week-10/shopping-list"}>Go to shopping list</Link>
                         <button onClick={firebaseSignOut}>Sign Out</button>
                     </>
             }
